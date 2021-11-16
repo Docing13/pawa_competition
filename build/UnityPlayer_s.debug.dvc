@@ -1,0 +1,5 @@
+outs:
+- md5: f3a933c26f94b99065b8c7bbcfe0052a
+  size: 40913392
+  path: UnityPlayer_s.debug
+  isexec: true

@@ -1,0 +1,5 @@
+outs:
+- md5: e9d1ad4c9ed472ffb53f00d851cbe34a
+  size: 14744
+  path: l1_8_wo27.x86_64
+  isexec: true

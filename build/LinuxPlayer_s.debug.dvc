@@ -1,0 +1,5 @@
+outs:
+- md5: 0d6ca793ef10e6d98deba248c959a2dd
+  size: 16064
+  path: LinuxPlayer_s.debug
+  isexec: true

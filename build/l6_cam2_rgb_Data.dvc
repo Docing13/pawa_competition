@@ -1,0 +1,5 @@
+outs:
+- md5: ab5488c5fabc211e14c9d87048ebea8d.dir
+  size: 81409152
+  nfiles: 155
+  path: l6_cam2_rgb_Data
