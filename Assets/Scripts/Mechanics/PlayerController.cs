@@ -42,11 +42,6 @@ namespace Platformer.Mechanics
 
         public Bounds Bounds => collider2d.bounds;
 
-        //[!] rewrite main update method to read these values and use them for player control 
-        public bool jump_control = false;
-        public float horizontal_control_previous = 0;
-        public float horizontal_control = 0;
-
         void Awake()
         {
             health = GetComponent<Health>();
@@ -58,91 +53,26 @@ namespace Platformer.Mechanics
 
         protected override void Update()
         {
-            // if (controlEnabled)
-            // {
-            //     move.x = Input.GetAxis("Horizontal");
-            //     if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
-            //         jumpState = JumpState.PrepareToJump;
-            //     else if (Input.GetButtonUp("Jump"))
-            //     {
-            //         stopJump = true;
-            //         Schedule<PlayerStopJump>().player = this;
-            //     }
-            // }
-            // else
-            // {
-            //     move.x = 0;
-            // }
-            // UpdateJumpState();
-            // base.Update();
-
-            // for agent test
-            // if (controlEnabled)
-            // {
-            //     // move.x = Input.GetAxis("Horizontal");
-            //     if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
-            //         AgentMoveTest(0);
-            //     else{
-            //         AgentMoveTest(1);
-            //     }
-            // }
-            AgentUpdate();
-            
-
-        }
-        // ----agent control
-        private void AgentUpdate()
-        {
-
-            move.x = horizontal_control;
-            
-            if (jump_control)
-            {   
-                jumpState = JumpState.PrepareToJump;
-            }
-
-            UpdateJumpState();
-            base.Update();
-        }
-
-        public void AgentControlHorizontal(float control){
-            float limit = 0.5f;
-            if (Mathf.Abs(horizontal_control) < Mathf.Abs(horizontal_control_previous))
+            if (controlEnabled)
             {
-                horizontal_control = 0;
-            }
-            else if (control > limit)
-            {
-                horizontal_control = limit;
-            }
-            else if( control < -limit)
-            {
-                horizontal_control = -limit;
+                move.x = Input.GetAxis("Horizontal");
+                if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
+                    jumpState = JumpState.PrepareToJump;
+                else if (Input.GetButtonUp("Jump"))
+                {
+                    stopJump = true;
+                    Schedule<PlayerStopJump>().player = this;
+                }
             }
             else
             {
-                horizontal_control = control;
+                move.x = 0;
             }
-            
-            horizontal_control_previous = horizontal_control;
+            UpdateJumpState();
+            base.Update();
 
-            // horizontal_control = control * scaler;
         }
-
-        public void AgentControlJump(int jump_inp){
-            if (jump_inp == 1)
-            {
-              jump_control = true;    
-            }
-
-            else if(jump_inp == 0)
-            {
-                jump_control = false;
-            }
-            
-        }
-        // ----agent control end
-
+        
 
         void UpdateJumpState()
         {
