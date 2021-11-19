@@ -42,6 +42,9 @@ namespace Platformer.Mechanics
 
         public Bounds Bounds => collider2d.bounds;
 
+        public float AgentMoveControl = 0f;
+        public int AgentJumpControl = 0;
+
         void Awake()
         {
             health = GetComponent<Health>();
@@ -66,11 +69,39 @@ namespace Platformer.Mechanics
             }
             else
             {
-                move.x = 0;
+                AgentMove();
+                AgentJump();
             }
+
             UpdateJumpState();
             base.Update();
 
+        }
+
+        public void AgentMove()
+        {   
+            if (AgentMoveControl > 1)
+            {
+                AgentMoveControl = 1f;
+            }
+            else if (AgentMoveControl < -1)
+            {
+                AgentMoveControl = -1f;
+            }
+            move.x = AgentMoveControl;
+        }
+
+        public void AgentJump()
+        {
+            if (AgentJumpControl == 1)
+                jumpState = JumpState.PrepareToJump;
+
+            else
+            {
+                stopJump = true;
+                Schedule<PlayerStopJump>().player = this;
+            }
+                
         }
         
 
