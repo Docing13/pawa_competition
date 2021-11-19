@@ -49,7 +49,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ml-agents": {
-      "version": "file:E:/Code Projects/repos/learning/ml-agents-main/com.unity.ml-agents",
+      "version": "2.1.0-exp.1",
       "depth": 0,
       "source": "local",
       "dependencies": {
