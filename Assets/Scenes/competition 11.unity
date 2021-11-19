@@ -56703,7 +56703,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -58894,8 +58894,8 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 4ab30a6b78053f440ad8969d54c83d95, type: 3}
   - m_RefCount: 208
     m_Data: {fileID: 21300000, guid: 74123a47f787b014e9cc87c75ed7460a, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 94e3ad24efa41394381384e2f14d15a2, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 20
     m_Data: {fileID: 21300000, guid: 31100c1a6774a964a9f5502cff2fb6c2, type: 3}
   - m_RefCount: 13
@@ -58906,8 +58906,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 94e3ad24efa41394381384e2f14d15a2, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 5864
     m_Data:
@@ -59477,7 +59477,7 @@ Transform:
   m_GameObject: {fileID: 56019255}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.14, y: -4.89, z: 78.94493}
-  m_LocalScale: {x: 0.8847289, y: 0.77537, z: 0.77537}
+  m_LocalScale: {x: 1.1833249, y: 0.77537, z: 0.77537}
   m_Children: []
   m_Father: {fileID: 1846881980}
   m_RootOrder: 0
@@ -60263,47 +60263,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d60c822c3f1b408ea7a00ecdb5e047a, type: 3}
---- !u!1 &2098534135 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1208144871472054, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2098534134}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2098534136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098534135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2445a43ef05a99d48afeda0ceb05c919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasHealth: 0
-  healthValue: 0
-  componentSelected: 0
-  propertyOrFieldSelected: 0
-  components: []
-  validPropertiesNFields: []
-  runAtAwake: 1
-  runAtStart: 1
-  runAtRuntime: 1
-  rewards:
-  - entity: {fileID: 56019255}
-    value: -1
-    isFinish: 1
-  - entity: {fileID: 408440962}
-    value: 10
-    isFinish: 1
-  discreteActions:
-  - name: AgentJump
-    size: 2
-  - name: AgentMove
-    size: 3
-  continiousActions: []
-  isManual: 0
 --- !u!4 &2098534137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4520396350849616, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,

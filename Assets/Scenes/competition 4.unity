@@ -1207,53 +1207,12 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1942715781}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942715784}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 709ee11994a2f44658e5fc9887c45081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1942715784 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1208144871472054, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1942715781}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1942715785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942715784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2445a43ef05a99d48afeda0ceb05c919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hero: {fileID: 1942715784}
-  hasHealth: 0
-  healthValue: 0
-  componentSelected: 0
-  propertyOrFieldSelected: 0
-  components: []
-  validPropertiesNFields: []
-  runAtAwake: 1
-  runAtStart: 1
-  runAtRuntime: 1
-  rewards:
-  - entity: {fileID: 609908263}
-    value: -1
-    isFinish: 1
-  - entity: {fileID: 1963336101}
-    value: 1
-    isFinish: 1
-  discreteActions:
-  - name: AgentControlJump
-    size: 2
-  continiousActions:
-  - name: AgentControlHorizontal
-  isManual: 0
 --- !u!1 &1963336101
 GameObject:
   m_ObjectHideFlags: 0

@@ -212,68 +212,12 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 61041812}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61041815}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 709ee11994a2f44658e5fc9887c45081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &61041815 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1208144871472054, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
-    type: 3}
-  m_PrefabInstance: {fileID: 61041812}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &61041816
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61041815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8534e17a0f90604c9afd4f5c73d829f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Id: 2cedde77-9eec-414f-a172-5c4b3c8e2891
---- !u!114 &61041817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61041815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b271862024ef4e54c9ea2b85d8e81273, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hero: {fileID: 61041815}
-  rewards:
-  - entity: {fileID: 1296185202}
-    value: 1000
-    isFinish: 1
-  - entity: {fileID: 90534678}
-    value: -100
-    isFinish: 1
-  - entity: {fileID: 0}
-    value: -10
-    isFinish: 1
-  - entity: {fileID: 0}
-    value: -10
-    isFinish: 1
-  - entity: {fileID: 0}
-    value: -10
-    isFinish: 1
-  - entity: {fileID: 0}
-    value: -10
-    isFinish: 1
-  discreteActions:
-  - name: AgentMove
-    size: 2
-  continiousActions: []
-  CameraGrayscale: 0
 --- !u!1 &90534678
 GameObject:
   m_ObjectHideFlags: 0
