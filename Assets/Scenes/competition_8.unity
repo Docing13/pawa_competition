@@ -34885,7 +34885,7 @@ GameObject:
   - component: {fileID: 67264108}
   m_Layer: 0
   m_Name: DeathZone (1)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34955,7 +34955,7 @@ GameObject:
   - component: {fileID: 94206809}
   m_Layer: 0
   m_Name: DeathZone (2)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35159,7 +35159,7 @@ GameObject:
   - component: {fileID: 490740328}
   m_Layer: 0
   m_Name: DeathZone (4)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35635,7 +35635,7 @@ GameObject:
   - component: {fileID: 1123709814}
   m_Layer: 0
   m_Name: DeathZone
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35771,7 +35771,7 @@ GameObject:
   - component: {fileID: 1867248786}
   m_Layer: 0
   m_Name: DeathZone (5)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35841,7 +35841,7 @@ GameObject:
   - component: {fileID: 1890166132}
   m_Layer: 0
   m_Name: DeathZone (6)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35941,7 +35941,7 @@ GameObject:
   - component: {fileID: 2083618390}
   m_Layer: 0
   m_Name: Victory
-  m_TagString: Untagged
+  m_TagString: Victory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36011,7 +36011,7 @@ GameObject:
   - component: {fileID: 2083668246}
   m_Layer: 0
   m_Name: DeathZone (3)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
